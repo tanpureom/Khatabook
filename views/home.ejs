@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KharchaBook</title>
+
+  <!-- Local Css file -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="left-nav">
+      <h1 class="logo">KharchaBook</h1>
+    </div>
+
+    <div class="right-nav">
+      <a href="/">Home</a>
+      <a href="/kharchabook">KharchaBook</a>
+      <a href="/create">Create a new Kharch</a>
+    </div>
+  </div>
+
+  <div class="homepage">
+    <div class="left-home">
+      <div class="heading">
+        <h1 class="primary-heading">Business zala ata khup easy..!!!</h1>
+        <h1 class="second-heading">with our new kharchabook desktop app</h1>
+        <p>
+          Introducing KharchaBook, your ultimate personal finance companion designed to simplify expense tracking and
+          budgeting. With KharchaBook, you can effortlessly manage your income and expenditures, ensuring you stay on
+          top of your financial goals.</p>
+      </div>
+      <button class="getstarted">Get Started</button>
+
+      <div class="needs">
+        <div class="item item1">
+          <h1>One platform for all your business needs</h1>
+        </div>
+        <div class="item item2">
+          <p>Manage Digital Bahi Khata</p>
+        </div>
+        <div class="item item3">
+          <p>Send Payment Reminders for easy collection</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-home">
+      <img src="/11116.webp" alt="">
+    </div>
+  </div>
+
+
+  <!-- script -->
+
+  <script>
+
+    let getstarted = document.querySelector('.getstarted');
+
+    getstarted.addEventListener('click', () => {
+      location.href = '/create';
+    })
+
+  </script>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>

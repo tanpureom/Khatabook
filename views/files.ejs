@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KharchaBook</title>
+
+  <!-- local css file -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- remix icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="left-nav">
+      <h1 class="logo">KharchaBook</h1>
+    </div>
+
+    <div class="right-nav">
+      <a href="/">Home</a>
+      <a href="/kharchabook">KharchaBook</a>
+      <a href="/create">Create a new Kharch</a>
+    </div>
+  </div>
+
+  <div class="show-files">
+    <% files.forEach((file)=> { %>
+      <div class="file">
+        <h1>
+          <%= file %>
+        </h1>
+        <div class="icon">
+          <a href="/edit/<%= file%>"><i class="ri-pencil-fill"></i></a>
+          <a href="/delete/<%= file %>"><i class="ri-delete-bin-6-fill"></i></a>
+          <a id="openfile" href="/open/<%= file%>">Open</a>
+        </div>
+      </div>
+      <% }) %>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>

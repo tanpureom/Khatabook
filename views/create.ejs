@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KharchaBook</title>
+
+  <!-- local css file -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="left-nav">
+      <h1 class="logo">KharchaBook</h1>
+    </div>
+
+    <div class="right-nav">
+      <a href="/">Home</a>
+      <a href="/kharchabook">KharchaBook</a>
+      <a href="/create">Create a new Kharch</a>
+    </div>
+  </div>
+
+  <div class="create-kharch">
+    <h1>Create new Kharch</h1>
+
+    <form action="/create" method="post">
+      <input type="text" placeholder="Tuza sagla kharch khali lihi..!!!" readonly>
+
+      <input type="date" name="date">
+
+      <textarea rows="20" name="filedata" placeholder="Ata ethe tu sagla kharch lini..!!!"></textarea>
+
+      <input type="submit" value="Create new kharch" id="submitbtn">
+    </form>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>
